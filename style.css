@@ -83,4 +83,65 @@ h2 {
         font-size: 15px;
         padding: 12px;
     }
+    /* Hamburger icon */
+.hamburger {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Member cards */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.member-card {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+}
+
+.member-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.member-card h3 {
+    margin-bottom: 5px;
+}
+
+.member-card p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Mobile navbar */
+@media (max-width: 600px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
 }
