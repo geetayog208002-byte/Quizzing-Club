@@ -143,5 +143,20 @@ h2 {
     .nav-links.active {
         display: flex;
     }
+    .navbar {
+    position: fixed;        /* stays at top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 25px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+}
 }
 }
